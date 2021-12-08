@@ -1,0 +1,55 @@
+在线激活VOL版本的windows和office
+
+Windows
+如果你的Windows是VL版本，那么只要在管理员权限的cmd或者powershell中执行下面两个命令就可以了。执行完第一个命令后要等弹出提示窗，期间电脑必须联网。
+
+slmgr /skms yangwenqing.com
+slmgr /ato
+
+如果不是VL版本的，那么需要更换密钥获取你对应版本的KEY，操作如下：
+运行以下命令查看系统版本：
+
+wmic os get caption
+
+在文末找到对应的key，在管理员权限的cmd或者powershell中执行下面命令安装key：
+
+slmgr /ipk xxxxx-xxxxx-xxxxx-xxxxx
+
+然后跟上面说的一样设置kms服务器地址，激活。
+查看是否激活成功及激活天数，运行以下命令查看：
+
+slmgr.vbs -xpr
+
+Office
+你安装的Office必须是VOL版本，否则无法激活，可以从msdn.itellyou.cn上下载。Office 2016是Office16，Office 2013是Office15，以此类推。
+在管理员权限的cmd或者powershell中执行下面命令，进入32位Office 2016的安装目录：
+
+cd "C:\Program Files (x86)\Microsoft Office\Office16"
+
+在管理员权限的cmd或者powershell中执行下面命令，进入64位Office 2016的安装目录：
+
+cd "C:\Program Files\Microsoft Office\Office16"
+
+在管理员权限的cmd或者powershell中执行下面两个命令。执行完第一个命令后要等待命令行出现反馈提示，期间电脑必须联网。
+
+cscript ospp.vbs /sethst:yangwenqing.com
+cscript ospp.vbs /act
+
+如果提示看到successful的字样，那么就是激活成功了，重新打开office就好。
+注意事项：
+
+Office2016提示该报错:No Office KMS licenses were found on the system解决办法
+需要将零售版(Retail)转成批量授权版(VOL)
+
+Office2016安装在Program Files(x86)里,将下面的代码复制保存为.bat格式进行转换,管理员运行
+
+Office2016安装在Program Files里,将下面的代码复制保存为.bat格式进行转换,管理员运行
+
+出现ERROR CODE: 0x4004F00C报错解决办法
+
+cscript ospp.vbs /dstatus    \\查看密钥
+cscript ospp.vbs /unpkey:XXXXX    \\移除产品密钥；XXXXX为密钥的最后5位
+cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99    \\ 安装Office Professional Plus 2016密匙
+
+如不能用自己找密匙替换
+安装成功会提示Product key installation successful,再执行 cscript ospp.vbs /act 即可激活Office

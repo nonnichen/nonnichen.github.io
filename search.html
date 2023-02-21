@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="renderer" content="webkit">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>NonniX</title>
+<meta name="keywords" content="NonniX">
+<meta name="description" content="简洁搜索 节约时间">
+<link rel="shortcut icon" href="./search/favicon.ico">
+<style>
+body {position:relative; background: #66B3FF; color: #333; font-size:12px; margin:0; height:100%; font-family: '微软雅黑',"Microsoft YaHei"}
+a, button {cursor: pointer;}
+a, a:hover {color: #069;text-decoration: none;}
+.wrap {display: block;clear: both;width: 100%;float:left}
+.hd {background-color:#069; float:left; width:100%}
+.nav {height:36px line-height:36px;}
+.fl {float: left; text-align:left; margin-left:15px;}
+.fr {float: right; text-align:right; margin-right:15px;}
+.nav span {float: left;display: block;color: #fff;padding-left: 5px;margin-right: 5px;}
+.nav span a {line-height: 36px; color:#fff}
+.ft{ margin:0 auto; text-align:center; position: fixed; left: 0; right: 0; bottom: 0;}
+.logo{margin-top:60px; text-align:center}
+.logo img{ height:80px}
+#type {text-align: center;margin: 20px 0;}
+.tbtn {padding: 2px;font-size: 18px; margin:0 5px;cursor: pointer;}
+.tbtn a{display:inline-block;color:#777;}
+.cur { border-bottom:3px solid #E50; color: #333; font-weight:bold; cursor:default;}
+.sbox {text-align: center;margin: 10px auto; position:relative; width:500px; max-width:88%}
+#srhkey {width:100%; text-indent:5px;height: 28px;border: 1px solid #ccc;line-height: 28px;font-size: 16px;color: #333; background: #fff;}
+#srhkey:focus {border: 1px solid #0099FF;}
+.srhbtn {margin-top: 10px;}
+.sbtn {margin: 0 10px;font-size: 14px;height: 32px;	line-height: 32px;display: inline-block;padding: 0 10px;text-align: center;cursor: pointer;letter-spacing: 1px;		text-shadow: 0 1px rgba(255,255,255,0.8);background: linear-gradient(#fefefe, #e7e7e7);	border-radius: 5px;	border: 1px solid #d0d0d0;}
+.sbtn:hover {background: #e7e7e7;}
+.sbtn::focus {border:1px solid #0099FF;}
+#auto{display:none;background:#66B3FF;position:absolute;color:#323232;z-index:9;border:1px solid #ccc;text-align:left; }
+</style>
+
+<script src="search/osd.js"></script><script src="search/ca-pub-8086936760373158.js"></script><script type="text/javascript" src="search/jquery.js"></script>
+
+<script type="text/javascript">if (top.location != self.location) {top.location = self.location}
+if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    var link = document.createElement("link");
+    link.setAttribute("rel", "stylesheet");
+    link.setAttribute("type", "text/css");
+    link.setAttribute("href", "/static/adapter.css?v=20180809");
+    document.getElementsByTagName("head")[0].appendChild(link)
+}</script>
+<link rel="preload" href="search/integrator.js" as="script"><script type="text/javascript" src="search/integrator.js"></script><link rel="preload" href="search/show_ads_impl.js" as="script"></head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <div class="nav fl"><span><a href="http://ip.nonni.cn/" target="_blank">🌎IP</a></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span><a href="http://book.nonni.cn" target="_blank">📙BOOKS</a></span></div>
+    <div class="nav fr"><span><a href="./ss.html" target="_blank">🍭</a></span></div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="logo"><img src="search/logo.gif"></div>
+  <div id="type"><span t="wy" c="1" class="tbtn cur">Search</span><span t="xs" c="0" class="tbtn"><a href="./science/">Science</a></span><span t="bk" c="0" class="tbtn"><a href="./wiki/">WiKi</a></span><span t="wk" c="0" class="tbtn"><a href="./translate/">Translate</a></span></div>
+  <div class="sbox"><input id="srhkey" type="text">
+    <div id="auto"></div>
+    <div class="srhbtn"><button type="button" id="srhbt1" action="https://www.baidu.com/s?wd=" class="sbtn">🔍百度</button><button type="button" id="srhbt0" action="https://www.google.com/search?source=hp&ei=ZxocXfeaKofGvgSIzo_IBw&q=" class="sbtn">🔍Google</button><button type="button" id="srhbt2" action="https://www.so.com/s?q=" class="sbtn">🔍360</button><button type="button" id="srhbt2" action="https://www.bing.com/search?q=" class="sbtn">🔍Bing</button><button type="button" id="srhbt2" action="https://www.sogou.com/web?query=" class="sbtn">🔍搜狗</button></div></div>
+	
+<div class="wrap"><div class="ft">
+<p>🌈 春风骀荡 | 🌸蓦然吹去</p>
+<p>🌀Support by <a href="https://nonni.cn/">Nonni</a> © 2005.</p>
+</div></div>
+<div style="display:none">
+<script type="text/javascript" src="search/main.js"></script>
+
+</div></body></html>

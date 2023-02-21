@@ -1,71 +1,143 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
-<meta name="renderer" content="webkit">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-<title>NonniX</title>
-<meta name="keywords" content="NonniX">
-<meta name="description" content="简洁搜索 节约时间">
-<link rel="shortcut icon" href="./search/favicon.ico">
-<style>
-body {position:relative; background: #66B3FF; color: #333; font-size:12px; margin:0; height:100%; font-family: '微软雅黑',"Microsoft YaHei"}
-a, button {cursor: pointer;}
-a, a:hover {color: #069;text-decoration: none;}
-.wrap {display: block;clear: both;width: 100%;float:left}
-.hd {background-color:#069; float:left; width:100%}
-.nav {height:36px line-height:36px;}
-.fl {float: left; text-align:left; margin-left:15px;}
-.fr {float: right; text-align:right; margin-right:15px;}
-.nav span {float: left;display: block;color: #fff;padding-left: 5px;margin-right: 5px;}
-.nav span a {line-height: 36px; color:#fff}
-.ft{ margin:0 auto; text-align:center; position: fixed; left: 0; right: 0; bottom: 0;}
-.logo{margin-top:60px; text-align:center}
-.logo img{ height:80px}
-#type {text-align: center;margin: 20px 0;}
-.tbtn {padding: 2px;font-size: 18px; margin:0 5px;cursor: pointer;}
-.tbtn a{display:inline-block;color:#777;}
-.cur { border-bottom:3px solid #E50; color: #333; font-weight:bold; cursor:default;}
-.sbox {text-align: center;margin: 10px auto; position:relative; width:500px; max-width:88%}
-#srhkey {width:100%; text-indent:5px;height: 28px;border: 1px solid #ccc;line-height: 28px;font-size: 16px;color: #333; background: #fff;}
-#srhkey:focus {border: 1px solid #0099FF;}
-.srhbtn {margin-top: 10px;}
-.sbtn {margin: 0 10px;font-size: 14px;height: 32px;	line-height: 32px;display: inline-block;padding: 0 10px;text-align: center;cursor: pointer;letter-spacing: 1px;		text-shadow: 0 1px rgba(255,255,255,0.8);background: linear-gradient(#fefefe, #e7e7e7);	border-radius: 5px;	border: 1px solid #d0d0d0;}
-.sbtn:hover {background: #e7e7e7;}
-.sbtn::focus {border:1px solid #0099FF;}
-#auto{display:none;background:#66B3FF;position:absolute;color:#323232;z-index:9;border:1px solid #ccc;text-align:left; }
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>不忘初心 ☆ 牢记使命</title>
+    <link rel="stylesheet" href="files/styles.css">
+    <link rel="stylesheet" href="files/github-dark.css">
+    <script src="files/jquery.js"></script>
+    <script src="files/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+	<meta http-equiv="refresh" content="10;url=search.html">
+  </head>
+  <body>
 
-<script src="search/osd.js"></script><script src="search/ca-pub-8086936760373158.js"></script><script type="text/javascript" src="search/jquery.js"></script>
+      <header>
+        <h1>不忘初心 ☆ 牢记使命</h1>
+        <p></p>
+      </header>
 
-<script type="text/javascript">if (top.location != self.location) {top.location = self.location}
-if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    var link = document.createElement("link");
-    link.setAttribute("rel", "stylesheet");
-    link.setAttribute("type", "text/css");
-    link.setAttribute("href", "/static/adapter.css?v=20180809");
-    document.getElementsByTagName("head")[0].appendChild(link)
-}</script>
-<link rel="preload" href="search/integrator.js" as="script"><script type="text/javascript" src="search/integrator.js"></script><link rel="preload" href="search/show_ads_impl.js" as="script"></head>
-<body>
-<div class="wrap">
-  <div class="hd">
-    <div class="nav fl"><span><a href="http://ip.nonni.cn/" target="_blank">🌎IP</a></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span><a href="http://book.nonni.cn" target="_blank">📙BOOKS</a></span></div>
-    <div class="nav fr"><span><a href="./nonniconnect.apk" target="_blank">🍭</a></span></div>
-  </div>
-</div>
-<div class="wrap">
-  <div class="logo"><img src="search/logo.gif"></div>
-  <div id="type"><span t="wy" c="1" class="tbtn cur">Search</span><span t="xs" c="0" class="tbtn"><a href="./science/">Science</a></span><span t="bk" c="0" class="tbtn"><a href="./wiki/">WiKi</a></span><span t="wk" c="0" class="tbtn"><a href="./translate/">Translate</a></span></div>
-  <div class="sbox"><input id="srhkey" type="text">
-    <div id="auto"></div>
-    <div class="srhbtn"><button type="button" id="srhbt1" action="https://www.baidu.com/s?wd=" class="sbtn">🔍百度</button><button type="button" id="srhbt0" action="https://www.google.com/search?source=hp&ei=ZxocXfeaKofGvgSIzo_IBw&q=" class="sbtn">🔍Google</button><button type="button" id="srhbt2" action="https://www.so.com/s?q=" class="sbtn">🔍360</button><button type="button" id="srhbt2" action="https://www.bing.com/search?q=" class="sbtn">🔍Bing</button><button type="button" id="srhbt2" action="https://www.sogou.com/web?query=" class="sbtn">🔍搜狗</button></div></div>
-	
-<div class="wrap"><div class="ft">
-<p>🌈 春风骀荡 | 🌸蓦然吹去</p>
-<p>🌀Support by <a href="https://nonni.cn/">Nonni</a> © 2005.</p>
-</div></div>
-<div style="display:none">
-<script type="text/javascript" src="search/main.js"></script>
+      <div id="banner">
+        <span id="logo"></span>
 
-</div></body></html>
+       
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section style="height: auto;">
+        <h3>
+<a id="identify-even-the-most-unlikely-discrepancies-caused-by-code-changes" class="anchor" href="#identify-even-the-most-unlikely-discrepancies-caused-by-code-changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>把不忘初心牢记使命作为党员干部的终身课题</h3>
+
+<p>越是长期执政，越不能丢掉马克思主义政党的本色，越不能忘记党的初心使命，越不能丧失自我革命精神。
+
+2020年我们将实现第一个百年奋斗目标，在接近目标的紧要关头，更需将初心和使命内化于心、外化于行，保持永不懈怠的精神状态和一往无前的奋斗姿态。
+
+建立不忘初心、牢记使命制度，就是把全面从严治党实践中的好经验好做法沉淀下来，用长效机制和约束机制激发管党治党效能。
+
+以百姓心为心，与人民同呼吸、共命运、心连心，是党的初心，也是党的恒心。</p>
+
+<p>党的十九大决定，以县处级以上领导干部为重点，在全党开展“不忘初心、牢记使命”主题教育。2019年5月13日，中共中央政治局召开会议，研究部署在全党开展“不忘初心、牢记使命”主题教育工作。
+
+开展“不忘初心、牢记使命”主题教育，是以习近平同志为核心的党中央统揽伟大斗争、伟大工程、伟大事业、伟大梦想作出的重大部署。今年是新中国成立70周年，是我们党在全国执政第70个年头，正是进行“不忘初心、牢记使命”主题教育的最好时间节点。
+
+习近平总书记高度重视这次主题教育，站在中国共产党自我革命的政治高度积极谋划部署，通过召开会议、基层考察调研、指示批示等各种方式，有力指导、推动主题教育开展。
+
+一次次重大宣示，一次次谆谆教诲，为广大党员、干部深刻理解初心使命、开展好主题教育奠定了扎实的思想基础。在以习近平同志为核心的党中央坚强领导下，“不忘初心、牢记使命”主题教育进展顺利、有声有色，全党上下心往一处想、劲往一处使，形成了守初心、担使命的浓厚氛围，展开了找差距、抓落实的切实行动。</p>
+
+<h3>
+<a id="dependable-results" class="anchor" href="#dependable-results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>党的自我革命任重道远</h3>
+
+<p>全面从严治党永远在路上。作为一个百年大党，如何永葆先进性和纯洁性、永葆青春活力，如何永远得到人民拥护和支持，如何实现长期执政，是我们党必须回答好、解决好的一个根本性问题。
+
+党的十八大以来，以习近平同志为核心的党中央，勇于面对党面临的重大风险考验和党内存在的突出问题，以雷霆万钧之力正风肃纪、反腐惩恶，消除了党和国家内部存在的严重隐患，实现了管党治党从宽松软到严紧硬的深刻转变，党内政治生活气象更新，党内政治生态明显好转，党的创造力、凝聚力、战斗力显著增强，党的团结统一更加巩固，党群关系明显改善，为党和国家事业发展提供了坚强政治保证。
+
+理论上清醒，政治上才能坚定。在取得成效的同时，也要清醒认识到目前党内仍然存在的种种问题。
+
+在庆祝中国共产党成立95周年大会上，习近平总书记就“不忘初心、继续前进”的含义和要求从8个方面进行阐发；在党的十九大报告中，习近平总书记对党的初心和使命作出重要阐述；在“不忘初心、牢记使命”主题教育工作会议上，习近平总书记用4个“迫切需要”阐明开展主题教育的重要意义，为全党作了一次深刻动员，为开展好主题教育指明了方向。同时，也对当前党内存在的问题作出概括：
+
+例如，在用习近平新时代中国特色社会主义思想武装全党方面，目前，一些党员干部在理论学习上同党中央要求相比还存在不小差距，没有做到往深里走、往心里走、往实里走。
+
+在推进新时代党的建设方面，我们党面临的“四大考验”是长期的、复杂的，面临的“四种危险”是尖锐的、严峻的，党内存在的思想不纯、政治不纯、组织不纯、作风不纯等突出问题尚未得到根本解决。还要看到，“四风”问题树倒根存，形式主义、官僚主义问题依然突出。
+
+在保持党同人民群众血肉联系方面，目前，一些党员干部为民服务不实在、不上心、不尽力，脱离群众。
+
+在实现党的十九大确定的目标任务方面，目前，一些党员干部干事创业精神不振、担当劲头不够。
+
+在主题教育开展过程中，习近平总书记又在不同场合，以不同方式，反复强调牢记党的初心使命的重要性。</p>
+
+<p>例如，2019年6月24日在主持十九届中央政治局第十五次集体学习时，习近平总书记指出，“四大考验”、“四种危险”依然复杂严峻，党的自我革命任重而道远，决不能有停一停、歇一歇的想法。他指出，这次主题教育列出的8个方面突出问题，都是可能动摇党的根基、阻碍党的事业的问题，必须以彻底的自我革命精神加以解决。
+
+7月，在内蒙古指导开展主题教育时，习近平总书记严肃指出，背离了初心和使命，党就会改变性质、改变颜色，就会失去人民、失去未来；
+
+11月，在上海考察时，习近平总书记强调，引导广大党员、干部深入学习党史、新中国史、改革开放史，让初心薪火相传，把使命永担在肩。
+
+党的十九届四中全会提出，要“建立不忘初心、牢记使命的制度”“夯实党执政的思想基础”“坚持不懈锤炼党员、干部忠诚干净担当的政治品格”“持续推进党的理论创新、实践创新、制度创新”等。这些要求，着眼于党的长期执政能力建设、先进性和纯洁性建设，着力于调动全党积极性、主动性、创造性，着眼于把制度建设贯穿于党的各项建设之中，是全面落实新时代党的建设总要求的扎实举措。
+
+越是长期执政，越不能丢掉马克思主义政党的本色，越不能忘记党的初心使命，越不能丧失自我革命精神，这是着眼长期执政、永葆马克思主义政党本色的战略考量，是着眼于应对严峻考验、解决自身问题的形势判断。作为党员干部，只有把不忘初心、牢记使命作为终身课题，才能以彻底的自我革命精神补短板、强弱项、固根本，才能常怀忧党之心、为党之责、强党之志，以舍我其谁的使命感担当起该担当的责任。</p>
+
+<h3>
+<a id="a-few-features-of-threers" class="anchor" href="#a-few-features-of-threers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>动真碰硬 对症下药</h3>
+
+<p>做到不忘初心、牢记使命，并不是一件容易的事情，必须有强烈的自我革命精神。作为世界第一大党，没有什么外力能够打倒我们党，能够打倒我们的只有我们自己。</p>
+
+<p>敢于直面问题、勇于修正错误，是我们党的显著特点和优势。不忘初心、牢记使命，说到底是要解决党内存在的违背初心和使命的各种问题，关键是要有正视问题的自觉和刀刃向内的勇气。无论什么时候，问题总是客观存在的，我们要以“君子检身，常若有过”的态度来检视发现自身不足，做到知耻而后勇。要坚持问题导向，真刀真枪解决问题。</p>
+
+<p>从实际情况看，党内存在的各种突出问题表现多样，需要全面查找、全面发力。抓落实重在抓问题，要用是否解决问题来检验成效。开展好主题教育，首先就要奔着问题去，对症下药、立行立改。改，就要真刀真枪、动真碰硬，就要盯住不放、一抓到底，不能装样子、打太极，防止表面整改、虚假整改、纸上整改。</p>
+
+<p>例如，在党的政治建设方面，要确保党的集中统一，促进全党增强“四个意识”、坚定“四个自信”、做到“两个维护”，净化政治生态，及时清除两面人等政治隐患，防范和化解政治风险；</p>
+
+<p>在党的思想建设方面，要坚持不懈加强理论武装，坚定理想信念，牢记党的性质宗旨，强化党性修养，切实解决一些党员、干部理想信念缺失、宗旨意识淡化等问题，不断增强全党同志党的意识、党员意识；</p>
+
+<p>在党的组织建设方面，要健全党的组织体系，整顿软弱涣散党组织，不断增强各级党组织的创造力、凝聚力、战斗力，坚决反对个人主义、分散主义、自由主义、本位主义、好人主义，匡正用人导向，净化用人风气，坚决整治选人用人上的不正之风；</p>
+
+<p>在党的作风建设和纪律建设方面，要坚持不懈整治“四风”，抓紧解决人民群众反映强烈的形式主义和官僚主义、干部不担当不作为、侵害群众利益等突出问题，持续保持反腐高压态势，铲除寄生在党的肌体上的毒瘤，永葆党的肌体健康。</p>
+
+<p>对于各级领导干部而言，不忘初心、牢记使命，就是要勇于担当、攻坚克难，在改革发展稳定各项工作中经受严格的思想淬炼、政治历练、实践锻炼。</p>
+
+<p>立足于有“破”有“立”，立足于“既有施药动刀的治病之法”又有“固本培元的强身之举”，立足于以自我革命精神不断推动全面从严治党向纵深发展，就要在党的自我净化、自我完善、自我革新、自我提高上下功夫：
+
+在自我净化上下功夫，就要过滤杂质、清除毒素、割除毒瘤，不断纯洁党的队伍，保证党的肌体健康；
+
+在自我完善上下功夫，就要坚持补短板、强弱项、固根本，防源头、治苗头、打露头，堵塞制度漏洞，健全监督机制，提升党的长期执政能力；</p>
+
+<p>在自我革新上求突破，就要深刻把握时代发展大势，坚决破除一切不合时宜的思想观念和体制机制弊端，勇于创新，通过革故鼎新不断开辟未来；</p>
+
+<p>在自我提高上下功夫，就要自觉向书本学习、向实践学习、向人民群众学习，加强党性锻炼和政治历练，不断提升政治境界、思想境界、道德境界，全面增强执政本领，建设一支忠诚干净担当的高素质专业化干部队伍。</p>
+
+<p>历史证明，在带领人民进行伟大社会革命的同时，不断进行伟大自我革命，这是中国共产党不断从胜利走向新的胜利的关键所在。党员、干部初心变没变、使命记得牢不牢，要由群众来评价、由实践来检验。自我革命不能关起门来搞，而要多听听群众意见，自觉接受群众监督。特别是第二批主题教育重点在基层，在群众家门口开展，更要求真务实，奔着问题去、盯着问题改，让群众感受到新变化新成效。</p>
+
+<h3>
+<a id="key-enhancements-for-threers-release-30" class="anchor" href="#key-enhancements-for-threers-release-30" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>越到紧要关头 越要保持干劲</h3>
+
+<p>中国共产党在不到100年的时间里从一个几十人的小党发展成为世界上最大的政党，党的兴旺依托于精神信念的保持，党的先进依赖于执政本领的提高，政治过硬和本领高强缺一不可。</p>
+
+<p>初心和使命是激励中国共产党人不断前进的根本动力，党员干部要把党的初心、党的使命铭刻于心，这样，人生奋斗才有更高的思想起点，才有不竭的精神动力。十九届四中全会提出建立不忘初心、牢记使命的制度，将从制度层面保障我们党有更高的思想起点并永葆生机活力。</p>
+
+<p>2020年，我们将努力实现第一个百年奋斗目标，全面建成小康社会。越是接近目标，越需要将初心和使命内化于心、外化于行，保持永不懈怠的精神状态和一往无前的奋斗姿态。</p>
+
+<p>习近平总书记多次强调着力在提高把握全局、谋划发展的战略能力上下功夫，不断增强驾驭风险、迎接挑战的本领。</p>
+
+<p>有什么样的精神，就会有什么样的力量。当前，我们尤其不能在一片喝彩声、赞扬声中丧失革命精神和斗志，逐渐陷入安于现状、不思进取、贪图享乐的状态，而是要牢记船到中流浪更急、人到半山路更陡，把不忘初心、牢记使命作为加强党的建设的永恒课题，作为全体党员、干部的终身课题；更需牢记空谈误国、实干兴邦的道理，坚持知行合一、真抓实干，做实干家，坚持问题导向，保持战略定力，以“越是艰险越向前”的英雄气概和“狭路相逢勇者胜”的斗争精神，坚定不移地推动全面从严治党向纵深发展。</p>
+
+<p>建立不忘初心、牢记使命制度，就是把全面从严治党实践中的好经验好做法沉淀下来，用长效机制和约束机制激发管党治党效能，为推进国家治理体系和治理能力现代化提供不竭动力；就是要通过完善规范的制度设计，推动全体共产党员恪守党的根本宗旨、理想信念、奋斗目标，让践行党的宗旨成为每一位党员干部的行动本能与行动自觉。</p>
+
+<p>把不忘初心、牢记使命的制度建立好、坚持好，是每位党员都要修好的必修课，要见抓落实的真功夫。每一个党员、干部特别是领导干部必须常怀忧党之心、为党之责、强党之志，积极主动投身其中，切实做到为党分忧、为国尽责、为民奉献。</p>
+
+<p>(瞭望 人民网 中共中央党史和文献研究院)</p>
+<p><a href="./ss.html"><i aria-hidden="true" class="content__centered"></i>2020</a></p>
+      </section>
+     
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  
+
+</body></html>

@@ -147,55 +147,7 @@ data1 = {
         url: "http://speedtest-blr1.digitalocean.com/",
         download: "http://speedtest-blr1.digitalocean.com/100mb.test"
     }],
-    VirMach: [{
-        name: "Frankfurt",
-        url: "http://ffm.lg.virmach.com/",
-        download: "http://ffm.lg.virmach.com/100MB.test"
-    }, {
-        name: "Amsterdam",
-        url: "http://ams.lg.virmach.com/",
-        download: "http://ams.lg.virmach.com/100MB.test"
-    }, {
-        name: "Buffalo",
-        url: "http://ny.lg.virmach.com/",
-        download: "http://ny.lg.virmach.com/100MB.test"
-    }, {
-        name: "Piscataway (NYC)",
-        url: "http://nj.lg.virmach.com/",
-        download: "http://nj.lg.virmach.com/100MB.test"
-    }, {
-        name: "Dallas",
-        url: "http://dal.lg.virmach.com/",
-        download: "http://dal.lg.virmach.com/100MB.test"
-    }, {
-        name: "Phoenix",
-        url: "http://phx.lg.virmach.com/",
-        download: "http://phx.lg.virmach.com/100MB.test"
-    }, {
-        name: "Los Angeles",
-        url: "http://la.lg.virmach.com/",
-        download: "http://la.lg.virmach.com/100MB.test"
-    }, {
-        name: "DDoS-Protected Los Angeles",
-        url: "http://filtered-la.lg.virmach.com/",
-        download: "http://filtered-la.lg.virmach.com/100MB.test"
-    }, {
-        name: "Chicago",
-        url: "http://chi.lg.virmach.com/",
-        download: "http://chi.lg.virmach.com/100MB.test"
-    }, {
-        name: "Seattle",
-        url: "http://sea.lg.virmach.com/",
-        download: "http://sea.lg.virmach.com/100MB.test"
-    }, {
-        name: "Atlanta",
-        url: "http://atl.lg.virmach.com/",
-        download: "http://atl.lg.virmach.com/100MB.test"
-    }, {
-        name: "San Jose",
-        url: "http://sj.lg.virmach.com/",
-        download: "http://sj.lg.virmach.com/100MB.test"
-    }],
+
     //
     // Official test URLs of BandwagonHost
     // (BandwagonHost does not publicly provide test URLs)
@@ -264,315 +216,10 @@ data1 = {
         name: "Netherlands",
         url: "http://lg.nl.ramnode.com/",
         download: "http://lg.nl.ramnode.com/static/100MB.test"
-    }],
-    //
-    // Source: https://www.host1plus.com/data-centers/
-    Host1Plus: [{
-        name: "Los Angeles",
-        url: "http://191.101.236.61/",
-        download: "http://191.101.236.61/100mb"
-    }, {
-        name: "Chicago",
-        url: "http://181.214.61.207/",
-        download: "http://181.214.61.207/100mb"
-    }, {
-        name: "São Paulo",
-        url: "http://191.96.4.248/",
-        download: "http://191.96.4.248/100mb"
-    }, {
-        name: "Frankfurt",
-        url: "http://185.137.13.237/",
-        download: "http://185.137.13.237/100mb"
-    }, {
-        name: "Johannesburg",
-        url: "http://196.251.248.78/",
-        download: "http://196.251.248.78/100mb"
     }]
 };
 // Page #2 - data of target servers
 data2 = {
-    //
-    // Source: https://winnervps.com/looking-glass.php/
-    WINNERvps: [{
-        name: "Los Angeles",
-        url: "https://backup.serverkeren.com/",
-        download: "https://backup.serverkeren.com/100MB.test"
-    }, {
-        name: "New York",
-        url: "https://lgeusa.serverkeren.com/",
-        download: "https://lgeusa.serverkeren.com/100MB.test"
-    }, {
-        name: "London",
-        url: "https://lguk.serverkeren.com/",
-        download: "https://lguk.serverkeren.com/100MB.test"
-    }, {
-        name: "Jakarta",
-        url: "https://lgid.serverkeren.com/",
-        download: "https://lgid.serverkeren.com/100MB.test"
-    }],
-    //
-    // Source: https://www.budgetvm.com/chicago-datacenter.php
-    BudgetVM: [{
-        name: "Chicago",
-        url: "http://199.231.208.6/",
-        download: "http://199.231.208.6/1GB.test"
-    }, {
-        name: "Dallas",
-        url: "http://192.80.186.135/",
-        download: "http://192.80.186.135/1GB.test"
-    }, {
-        name: "Los Angeles",
-        url: "http://192.157.214.6/",
-        download: "http://192.157.214.6/1GB.test"
-    }, {
-        name: "Miami",
-        url: "http://172.246.125.6/",
-        download: "http://172.246.125.6/1GB.test"
-    }],
-    //
-    // Source: https://iniz.com/our-network
-    INIZ: [{
-        name: "London",
-        url: "https://lon.lg.iniz.com/",
-        download: "https://lon.lg.iniz.com/100MB.test"
-    }, {
-        name: "Amsterdam",
-        url: "https://ams.lg.iniz.com/",
-        download: "https://ams.lg.iniz.com/100MB.test"
-    }, {
-        name: "Ashburn",
-        url: "https://ash.lg.iniz.com/",
-        download: "https://ash.lg.iniz.com/100MB.test"
-    }, {
-        name: "Los Angeles",
-        url: "https://la.lg.iniz.com/",
-        download: "https://la.lg.iniz.com/100MB.test"
-    }, {
-        name: "Singapore",
-        url: "https://sg.lg.iniz.com/",
-        download: "http://103.254.153.18/speedtest/100mb.bin"
-    }],
-    //
-    // Source: http://lg.ams.nl.ultravps.eu/
-    "UltraVPS.eu": [{
-        name: "Amsterdam",
-        url: "http://lg.ams.nl.ultravps.eu/",
-        download: "http://lg.ams.nl.ultravps.eu/100MB.test"
-    }, {
-        name: "Duesseldorf",
-        url: "http://lg.dus.de.ultravps.eu/",
-        download: "http://lg.dus.de.ultravps.eu/100MB.test"
-    }, {
-        name: "Dallas",
-        url: "http://lg.dal.us.ultravps.eu/",
-        download: "http://lg.dal.us.ultravps.eu/100MB.test"
-    }, {
-        name: "London",
-        url: "http://lg.lon.uk.ultravps.eu/",
-        download: "http://lg.lon.uk.ultravps.eu/100MB.test"
-    }, {
-        name: "Los Angeles",
-        url: "http://lg.lax.us.ultravps.eu/",
-        download: "http://lg.lax.us.ultravps.eu/100MB.test"
-    }],
-    //
-    // Source: https://www.hudsonvalleyhost.com/network.php
-    /*HudsonValleyHost: [{
-        name: "Dallas",
-        url: "http://lg-dal.hudsonvalleyhost.com/",
-        download: "http://lg-dal.hudsonvalleyhost.com/100MB.test"
-    }, {
-        name: "Buffalo",
-        url: "http://lg-buff.hudsonvalleyhost.com/",
-        download: "http://lg-buff.hudsonvalleyhost.com/100MB.test"
-    }, {
-        name: "Los Angeles",
-        url: "http://lg-la.hudsonvalleyhost.com/",
-        download: "http://lg-la.hudsonvalleyhost.com/100MB.test"
-    }, {
-        name: "Chicago",
-        url: "http://lg-chi.hudsonvalleyhost.com/",
-        download: "http://lg-chi.hudsonvalleyhost.com/100MB.test"
-    }, {
-        name: "Atlanta",
-        url: "http://lg-atl.hudsonvalleyhost.com/",
-        download: "http://lg-atl.hudsonvalleyhost.com/100MB.test"
-    }],*/
-    //
-    //https://hosteons.com/
-    Hosteons: [{
-        name: "LA",
-        url: "http://lg.hosteons.com/",
-        download: "http://lg.hosteons.com/100MB.test"
-    }, {
-        name: "NY",
-        url: "http://lg.ny.hosteons.com/",
-        download: "http://lg.ny.hosteons.com/100MB.test"
-    }],
-    //
-    // Source: https://www.hostwinds.com/company/datacenters
-    HostWinds: [{
-        name: "Dallas",
-        url: "http://108.174.193.107/",
-        download: "http://108.174.193.107/100mb.zip"
-    }, {
-        name: "Seattle",
-        url: "http://104.168.168.16/",
-        download: "http://104.168.168.16/100mb.zip"
-    }]
-};
-// Page #3 - AWS
-data3 = {
-    //
-    // Source: ky0nch3ng
-    "EC2": [{
-        name: "Asia Pacific (Seoul)",
-        url: "http://ap-northeast-2-ec2.cloudharmony.net/"
-    }, {
-        name: "US West (N. California)",
-        url: "http://us-west-1-ec2.cloudharmony.net/"
-    }, {
-        name: "US West (Oregon)",
-        url: "http://us-west-2-ec2.cloudharmony.net/"
-    }, {
-        name: "Asia Pacific (Sydney)",
-        url: "http://ap-southeast-2-ec2.cloudharmony.net/"
-    }, {
-        name: "Asia Pacific (Tokyo)",
-        url: "http://ap-northeast-1-ec2.cloudharmony.net/"
-    }, {
-        name: "EU (Frankfurt)",
-        url: "http://eu-central-1-ec2.cloudharmony.net/"
-    }, {
-        name: "Canada (Central)",
-        url: "http://ca-central-1-ec2.cloudharmony.net/"
-    },/*INVALID {
-        name: "US East (Ohio)",
-        url: "http://us-east-2-ec2.cloudharmony.net/"
-    },*/ {
-        name: "EU (Ireland)",
-        url: "http://eu-west-1-ec2.cloudharmony.net/"
-    }, {
-        name: "EU (London)",
-        url: "http://eu-west-2-ec2.cloudharmony.net/"
-    }, {
-        name: "South America (São Paulo)",
-        url: "http://sa-east-1-ec2.cloudharmony.net/"
-    }, {
-        name: "Asia Pacific (Singapore)",
-        url: "http://ap-southeast-1-ec2.cloudharmony.net/"
-    }, {
-        name: "US East (N. Virginia)",
-        url: "http://us-east-1-ec2.cloudharmony.net/"
-    }, {
-        name: "Asia Pacific (Mumbai)",
-        url: "http://ap-south-1-ec2.cloudharmony.net/"
-    }],
-    //
-    // Source: http://ec2-reachability.amazonaws.com/
-    "EC2 (No Download)": [{
-        name: "North Virginia",
-        url: "http://18.204.0.0/"
-    }, {
-        name: "Ohio",
-        url: "http://3.16.0.0/"
-    },  {
-        name: "North California",
-        url: "http://13.52.0.0/"
-    },  {
-        name: "Oregon",
-        url: "http://18.236.0.0/"
-    },  {
-        name: "Ireland",
-        url: "http://18.202.0.0/"
-    },  {
-        name: "Frankfurt",
-        url: "http://3.120.0.0/"
-    },  {
-        name: "London",
-        url: "http://3.8.0.0/"
-    },  {
-        name: "Paris",
-        url: "http://35.180.0.253/"
-    },   {
-        name: "Canada Central",
-        url: "http://35.182.0.251/"
-    },   {
-        name: "Tokyo",
-        url: "http://13.112.63.251/"
-    },   {
-        name: "São Paulo",
-        url: "http://18.228.0.0/"
-    },   {
-        name: "Seoul",
-        url: "http://13.124.63.251/"
-    },   {
-        name: "Osaka-Local",
-        url: "http://13.208.32.253/"
-    },   {
-        name: "Singapore",
-        url: "http://13.228.0.251/"
-    },   {
-        name: "Sydney",
-        url: "http://13.54.63.252/"
-    },   {
-        name: "Mumbai",
-        url: "http://13.126.0.252/"
-    }],
-    //
-    // Source: https://docs.aws.amazon.com/general/latest/gr/rande.html
-    "S3 (No Download)": [/*{
-        name: "US East (Ohio)",
-        url: "http://s3.us-east-2.amazonaws.com/"
-    },*/ {
-        name: "US East (N. Virginia)",
-        url: "http://s3.amazonaws.com/"
-    }, {
-        name: "US West (N. California)",
-        url: "http://s3.us-west-1.amazonaws.com/"
-    }, {
-        name: "US West (Oregon)",
-        url: "http://s3.us-west-2.amazonaws.com/"
-    },/* {
-        name: "Asia Pacific (Mumbai)",
-        url: "http://s3.ap-south-1.amazonaws.com/"
-    },*/ {
-        name: "Asia Pacific (Osaka-Local)",
-        url: "http://s3.ap-northeast-3.amazonaws.com/"
-    },/* {
-        name: "Asia Pacific (Seoul)",
-        url: "http://s3.ap-northeast-2.amazonaws.com/"
-    },*/ {
-        name: "Asia Pacific (Singapore)",
-        url: "http://s3.ap-southeast-1.amazonaws.com/"
-    },/* {
-        name: "Asia Pacific (Sydney)",
-        url: "http://s3.ap-southeast-2.amazonaws.com/"
-    },*/ {
-        name: "Asia Pacific (Tokyo)",
-        url: "http://s3.ap-northeast-1.amazonaws.com/"
-    },/* {
-        name: "Canada (Central)",
-        url: "http://s3.ca-central-1.amazonaws.com/"
-    },*//* {
-        name: "EU (Frankfurt)",
-        url: "http://s3.eu-central-1.amazonaws.com/"
-    },*/ {
-        name: "EU (Ireland)",
-        url: "http://s3.eu-west-1.amazonaws.com/"
-    },/* {
-        name: "EU (London)",
-        url: "http://s3.eu-west-2.amazonaws.com/"
-    },*/ {
-        name: "EU (Paris)",
-        url: "http://s3.eu-west-3.amazonaws.com/"
-    }, {
-        name: "South America (São Paulo)",
-        url: "http://s3.sa-east-1.amazonaws.com/"
-    }]
-};
-// Page #4 - Azure and GCE
-data4 = {
     //
     // Source: ky0nch3ng
     "Azure Americas": [{
@@ -656,10 +303,163 @@ data4 = {
     }, {
         name: "Victoria",
         url: "http://australia-southeast-azure.cloudharmony.net/"
-    }],
+    }]
+};
+// Page #3 - AWS
+data3 = {
     //
     // Source: ky0nch3ng
-    "GCE": [{
+    "EC2-A": [{
+        name: "Asia Pacific (Seoul)",
+        url: "http://ap-northeast-2-ec2.cloudharmony.net/"
+    }, {
+        name: "US West (N. California)",
+        url: "http://us-west-1-ec2.cloudharmony.net/"
+    }, {
+        name: "US West (Oregon)",
+        url: "http://us-west-2-ec2.cloudharmony.net/"
+    }, {
+        name: "Asia Pacific (Sydney)",
+        url: "http://ap-southeast-2-ec2.cloudharmony.net/"
+    }, {
+        name: "Asia Pacific (Tokyo)",
+        url: "http://ap-northeast-1-ec2.cloudharmony.net/"
+    }, {
+        name: "EU (Frankfurt)",
+        url: "http://eu-central-1-ec2.cloudharmony.net/"
+    }, {
+        name: "Canada (Central)",
+        url: "http://ca-central-1-ec2.cloudharmony.net/"
+    },/*INVALID {
+        name: "US East (Ohio)",
+        url: "http://us-east-2-ec2.cloudharmony.net/"
+    },*/ {
+        name: "EU (Ireland)",
+        url: "http://eu-west-1-ec2.cloudharmony.net/"
+    }, {
+        name: "EU (London)",
+        url: "http://eu-west-2-ec2.cloudharmony.net/"
+    }, {
+        name: "South America (São Paulo)",
+        url: "http://sa-east-1-ec2.cloudharmony.net/"
+    }, {
+        name: "Asia Pacific (Singapore)",
+        url: "http://ap-southeast-1-ec2.cloudharmony.net/"
+    }, {
+        name: "US East (N. Virginia)",
+        url: "http://us-east-1-ec2.cloudharmony.net/"
+    }, {
+        name: "Asia Pacific (Mumbai)",
+        url: "http://ap-south-1-ec2.cloudharmony.net/"
+    }],
+    //
+    // Source: http://ec2-reachability.amazonaws.com/
+    "EC2-B": [{
+        name: "North Virginia",
+        url: "http://18.204.0.0/"
+    }, {
+        name: "Ohio",
+        url: "http://3.16.0.0/"
+    },  {
+        name: "North California",
+        url: "http://13.52.0.0/"
+    },  {
+        name: "Oregon",
+        url: "http://18.236.0.0/"
+    },  {
+        name: "Ireland",
+        url: "http://18.202.0.0/"
+    },  {
+        name: "Frankfurt",
+        url: "http://3.120.0.0/"
+    },  {
+        name: "London",
+        url: "http://3.8.0.0/"
+    },  {
+        name: "Paris",
+        url: "http://35.180.0.253/"
+    },   {
+        name: "Canada Central",
+        url: "http://35.182.0.251/"
+    },   {
+        name: "Tokyo",
+        url: "http://13.112.63.251/"
+    },   {
+        name: "São Paulo",
+        url: "http://18.228.0.0/"
+    },   {
+        name: "Seoul",
+        url: "http://13.124.63.251/"
+    },   {
+        name: "Osaka-Local",
+        url: "http://13.208.32.253/"
+    },   {
+        name: "Singapore",
+        url: "http://13.228.0.251/"
+    },   {
+        name: "Sydney",
+        url: "http://13.54.63.252/"
+    },   {
+        name: "Mumbai",
+        url: "http://13.126.0.252/"
+    }],
+    //
+    // Source: https://docs.aws.amazon.com/general/latest/gr/rande.html
+    "S3": [/*{
+        name: "US East (Ohio)",
+        url: "http://s3.us-east-2.amazonaws.com/"
+    },*/ {
+        name: "US East (N. Virginia)",
+        url: "http://s3.amazonaws.com/"
+    }, {
+        name: "US West (N. California)",
+        url: "http://s3.us-west-1.amazonaws.com/"
+    }, {
+        name: "US West (Oregon)",
+        url: "http://s3.us-west-2.amazonaws.com/"
+    },/* {
+        name: "Asia Pacific (Mumbai)",
+        url: "http://s3.ap-south-1.amazonaws.com/"
+    },*/ {
+        name: "Asia Pacific (Osaka-Local)",
+        url: "http://s3.ap-northeast-3.amazonaws.com/"
+    },/* {
+        name: "Asia Pacific (Seoul)",
+        url: "http://s3.ap-northeast-2.amazonaws.com/"
+    },*/ {
+        name: "Asia Pacific (Singapore)",
+        url: "http://s3.ap-southeast-1.amazonaws.com/"
+    },/* {
+        name: "Asia Pacific (Sydney)",
+        url: "http://s3.ap-southeast-2.amazonaws.com/"
+    },*/ {
+        name: "Asia Pacific (Tokyo)",
+        url: "http://s3.ap-northeast-1.amazonaws.com/"
+    },/* {
+        name: "Canada (Central)",
+        url: "http://s3.ca-central-1.amazonaws.com/"
+    },*//* {
+        name: "EU (Frankfurt)",
+        url: "http://s3.eu-central-1.amazonaws.com/"
+    },*/ {
+        name: "EU (Ireland)",
+        url: "http://s3.eu-west-1.amazonaws.com/"
+    },/* {
+        name: "EU (London)",
+        url: "http://s3.eu-west-2.amazonaws.com/"
+    },*/ {
+        name: "EU (Paris)",
+        url: "http://s3.eu-west-3.amazonaws.com/"
+    }, {
+        name: "South America (São Paulo)",
+        url: "http://s3.sa-east-1.amazonaws.com/"
+    }]
+};
+// Page #4 - Azure and GCE
+data4 = {
+    //
+    // Source: ky0nch3ng
+    "GOOGLE": [{
         name: "Tokyo, Japan",
         url: "http://asia-northeast1-gce.cloudharmony.net/"
     }, {

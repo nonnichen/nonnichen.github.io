@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #4CAF50;
+  background: #66B3FF;
   color: #ffffff;
   font-size: 14px;
   font-family: Tahoma, Helvetica, Arial, sans-serif;
@@ -22,7 +22,9 @@ a:link, a:visited, a:hover, a:active {
 
 .pagelink {
   white-space: nowrap;
-  margin-left: 15px;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 85px;
   display: inline-block;
   width: 255px;
 }
@@ -149,7 +151,7 @@ img {
 }
 
 .title{
-  font-size: 26px;
+  font-size: 40px;
   font-weight: bold;
   padding: 0px 0px 0px 0px;
 }
@@ -179,7 +181,7 @@ img {
   position: fixed;
   bottom: 0px;
   left: 50%;
-  width: 240px;
+  width: auto;
   margin-top: 0px;
   margin-left: -120px;
   background-color: green;
@@ -250,3 +252,20 @@ img {
     padding: 0px 0px 0px 0px;
   }
 }
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    width: auto;
+    margin-top: 0px;
+    margin-left: -120px;
+    background-color: #66B3FF;
+    color: white;
+    z-index: 10000;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 25px 25px 0px 0px;
+    text-align: center;
+    box-shadow: 0 0 5px 5px #000;
+  }

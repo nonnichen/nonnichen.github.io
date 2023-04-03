@@ -59,6 +59,7 @@ header,
 hgroup,
 nav,
 section,
+grave,
 summary {
   display: block;
 }
@@ -1008,3 +1009,20 @@ footer {
     width: auto;
   }
 }
+
+grave {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    width: auto;
+    margin-top: 0px;
+    margin-left: -120px;
+    background-color: #66B3FF;
+    color: white;
+    z-index: 10000;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 25px 25px 0px 0px;
+    text-align: center;
+    box-shadow: 0 0 5px 5px #000;
+  }

@@ -13,13 +13,15 @@ body {position:relative; background: #66B3FF; color: #333; font-size:12px; margi
 a, button {cursor: pointer;}
 a, a:hover {color: #069;text-decoration: none;}
 .wrap {display: block;clear: both;width: 100%;float:left}
-.hd {background-color:#069; float:left; width:100%}
+.hd {background-color:#069; float:left; width:100%; height:40px}
+.hd2 {background-color:#ffcc00; float:left; width:100%; height:40px}
 .nav {height:36px line-height:36px;}
 .fl {float: left; text-align:left; margin-left:15px;}
 .fr {float: right; text-align:right; margin-right:15px;}
 .nav span {float: left;display: block;color: #fff;padding-left: 5px;margin-right: 5px;}
 .nav span a {line-height: 36px; color:#fff}
 .ft{ margin:0 auto; text-align:center; position: fixed; left: 0; right: 0; bottom: 0;}
+.grave { position: fixed; bottom: 10px; left: 90%; width: 200px; margin-top: 0px; margin-left: -120px; background-color: #66B3FF; color: white; z-index: 10000; padding: 10px; padding-top: 20px; border-radius: 25px 25px 0px 0px; text-align: center; box-shadow: 0 0 5px 5px #000;}
 .logo{margin-top:60px; text-align:center}
 .logo img{ height:80px}
 #type {text-align: center;margin: 20px 0;}
@@ -35,9 +37,9 @@ a, a:hover {color: #069;text-decoration: none;}
 .sbtn::focus {border:1px solid #0099FF;}
 #auto{display:none;background:#66B3FF;position:absolute;color:#323232;z-index:9;border:1px solid #ccc;text-align:left; }
 </style>
-
-<script src="search/osd.js"></script><script src="search/ca-pub-8086936760373158.js"></script><script type="text/javascript" src="search/jquery.js"></script>
-
+<script src="search/osd.js"></script>
+<script src="search/ca-pub-8086936760373158.js"></script>
+<script type="text/javascript" src="search/jquery.js"></script>
 <script type="text/javascript">if (top.location != self.location) {top.location = self.location}
 if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     var link = document.createElement("link");
@@ -50,9 +52,13 @@ if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.u
 <body>
 <div class="wrap">
   <div class="hd">
-    <div class="nav fl"><span><a href="http://ip.nonni.cn/" target="_blank">🌎IP</a></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span><a href="http://book.nonni.cn" target="_blank">📙BOOKS</a></span></div>
+    <div class="nav fl"></div>
     <div class="nav fr"><span><a href="./ss.html" target="_blank">🍭</a></span></div>
   </div>
+  <div class="hd2">
+    <div class="nav fl"></div>
+    <div class="nav fr"><span> </span></div>
+  </div>  
 </div>
 <div class="wrap">
   <div class="logo"><img src="search/logo.gif"></div>
@@ -60,12 +66,361 @@ if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.u
   <div class="sbox"><input id="srhkey" type="text">
     <div id="auto"></div>
     <div class="srhbtn"><button type="button" id="srhbt1" action="https://www.baidu.com/s?wd=" class="sbtn">🔍百度</button><button type="button" id="srhbt0" action="https://www.google.com/search?source=hp&ei=ZxocXfeaKofGvgSIzo_IBw&q=" class="sbtn">🔍Google</button><button type="button" id="srhbt2" action="https://www.so.com/s?q=" class="sbtn">🔍360</button><button type="button" id="srhbt2" action="https://www.bing.com/search?q=" class="sbtn">🔍Bing</button><button type="button" id="srhbt2" action="https://www.sogou.com/web?query=" class="sbtn">🔍搜狗</button></div></div>
-	
-<div class="wrap"><div class="ft">
+<div id="ukraine"></div>	
+<div class="wrap">
+<div class="ft">
+<span><a href="http://ip.nonni.cn/" target="_blank">🌎IP</a></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span><a href="http://book.nonni.cn" target="_blank">📙BOOK</a></span>
 <p>🌈 春风骀荡 | 🌸蓦然吹去</p>
-<p>🌀Support by <a href="https://nonni.cn/">Nonni</a> © 2005.</p>
-</div></div>
+<p>🌀Support by <a href="https://nonni.cn/">Nonni</a> © 2005-2023</p>
+</div>
+</div>
 <div style="display:none">
 <script type="text/javascript" src="search/main.js"></script>
+<script src="files/swu-badge.js"></script>
+<!-- end tag Nonni -->
+</div>
+<div class="grave">
+<font size="6">🕆</font>
+<p>🌈卑鄙是卑鄙者的通行证</p>
+<p>🌸高尚是高尚者的墓志铭</p>
+<p>💗看吧</p>
+<p>🏯在那镀金的天空中</p>
+<p>🌳飘满了死者弯曲的倒影</p>
+</div>	
+<SCRIPT language=javascript>
+     document.onkeydown = chang_page;
+     function chang_page() {
+         if (event.keyCode == 120 || event.keyCode == 120) location = 'http://pan.i.nonni.cn:7780/';
+         if (event.keyCode == 122 || event.keyCode == 122) location = 'ss.html'
+     }
+</SCRIPT>
+<!--start::HOOK-->
 
-</div></body></html>
+<style>
+    .deng-box1 {
+        position: fixed;
+        top: -30px;
+        left: 100px;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    
+    .deng-box2 {
+        position: fixed;
+        top: -25px;
+        left: 150px;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    
+    .deng-box3 {
+        position: fixed;
+        top: -28px;
+        right: 100px;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    
+    .deng-box4 {
+        position: fixed;
+        top: -26px;
+        right: 150px;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    
+    @media (max-width: 768px) {
+        .deng-box1,
+        .deng-box2,
+        .deng-box3,
+        .deng-box4 {
+            transform: scale(.4, .4);
+            top: -66px !important;
+        }
+        .deng-box1 {
+            left: -115px;
+        }
+        .deng-box2 {
+            left: -130px;
+        }
+        .deng-box3 {
+            right: -115px;
+        }
+        .deng-box4 {
+            right: -130px;
+        }
+    }
+    
+    .deng-box1 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        /*上 右 下 左*/
+        margin: 76px 100px 0px 100px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 3s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+    }
+    
+    .deng-box2 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        /*上 右 下 左*/
+        margin: 76px 150px 0px 150px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+    }
+    
+    .deng-box3 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        /*上 右 下 左*/
+        margin: 76px 100px 0px 100px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 5s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+    }
+    
+    .deng-box4 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        /*上 右 下 左*/
+        margin: 76px 150px 0px 150px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+    }
+    
+    .deng-a {
+        width: 100px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: 12px 8px 8px 10px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    
+    .deng-b {
+        width: 45px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: -2px 8px 8px 26px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    
+    .xian {
+        position: absolute;
+        top: -50px;
+        left: 60px;
+        width: 2px;
+        height: 50px;
+        background: #dc8f03;
+    }
+    
+    .shui-a {
+        position: relative;
+        width: 5px;
+        height: 20px;
+        margin: -5px 0 0 59px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        -webkit-transform-origin: 50% -45px;
+        background: #ffa500;
+        border-radius: 0 0 5px 5px;
+    }
+    
+    .shui-b {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        background: #dc8f03;
+        border-radius: 50%;
+    }
+    
+    .shui-c {
+        position: absolute;
+        top: 18px;
+        left: -2px;
+        width: 10px;
+        height: 35px;
+        background: #ffa500;
+        border-radius: 0 0 0 5px;
+    }
+    
+    .deng:before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    
+    .deng:after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: "";
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    
+    .deng-t {
+        font-family: 华文行楷, Arial, Lucida Grande, Tahoma, sans-serif;
+        font-size: 3.3rem;
+        color: #dc8f03;
+        font-weight: bold;
+        line-height: 85px;
+        text-align: center;
+    }
+    
+    .night .deng-t,
+    .night .deng-box,
+    .night .deng-box1 {
+        background: transparent !important;
+    }
+    
+    @-moz-keyframes swing {
+        0% {
+            -moz-transform: rotate(-10deg)
+        }
+        50% {
+            -moz-transform: rotate(10deg)
+        }
+        100% {
+            -moz-transform: rotate(-10deg)
+        }
+    }
+    
+    @-webkit-keyframes swing {
+        0% {
+            -webkit-transform: rotate(-10deg)
+        }
+        50% {
+            -webkit-transform: rotate(10deg)
+        }
+        100% {
+            -webkit-transform: rotate(-10deg)
+        }
+    }
+</style>
+
+<div class="deng-box1">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">红</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c"></div>
+            <div class="shui-b"></div>
+        </div>
+    </div>
+</div>
+<div class="deng-box2">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">拂</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c"></div>
+            <div class="shui-b"></div>
+        </div>
+    </div>
+</div>
+<div class="deng-box3">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">奔</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c"></div>
+            <div class="shui-b"></div>
+        </div>
+    </div>
+</div>
+<div class="deng-box4">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">夜</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c"></div>
+            <div class="shui-b"></div>
+        </div>
+    </div>
+</div><script type="text/javascript">
+var a_idx = 0;
+var text = '["\u2764"]';
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = JSON.parse(text);
+        var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 99999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#ff6651"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+<!--end::HOOK-->
+</body></html>

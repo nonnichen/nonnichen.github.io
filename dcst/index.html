@@ -2,9 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Datacenter Speed Test</title>
+  <title>海外云主机响应测试</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>a, a:hover {color: #069;text-decoration: none;}</style>
   <script src="react.production.min.js"></script>
   <script src="react-dom.production.min.js"></script>
   <script src="targets.js"></script>
@@ -16,20 +17,31 @@
     <div class="header">
       <div class="title">Datacenter Speed Test</div>
       <div class="introduction">
-        Test latency(ms) and download(MBps) of many cloud service providers. DNS latency is excluded.
-        <span class="usage">You should click interesting datacenter, for its server and download, to test it further.</span>
-        <a href="https://nonnix.cn">From MSMBPS, Support by Nonni</a>
+	  </br>
+        Ping & DNS latency(ms) of Cloud Service Provider.</br>
+        <span class="usage">云服务的网速受地域和线路的影响很大，测试结果仅供参考，方便购买海外云的朋友们对比各常见服务商。</span>
+      <p>🌀 Support by &nbsp<a href="https://nonni.cn/"> Nonni</a>&nbsp 2005-2023</p>
       </div>
     </div>
+
     <div>
-      <a class="pagelink" href="javascript:location=location.pathname;void(0);">Page #1 - More Popular Cloud Providers</a>
-      <a class="pagelink" href="javascript:location=location.pathname+'#page2';location.reload();void(0);">Page #2 - Less Popular Cloud Providers</a><br>
-      <a class="pagelink" href="javascript:location=location.pathname+'#page3';location.reload();void(0);">Page #3 - Amazon Web Services EC2 S3</a>
-      <a class="pagelink" href="javascript:location=location.pathname+'#page4';location.reload();void(0);">Page #4 - Microsoft Azure & Google GCE</a>
-      <br><br>
+      <a class="pagelink" href="javascript:location=location.pathname;void(0);">Popular Cloud Service Providers</a>
+      <a class="pagelink" href="javascript:location=location.pathname+'#page2';location.reload();void(0);">Microsoft Azure</a><br>
+      <a class="pagelink" href="javascript:location=location.pathname+'#page3';location.reload();void(0);">Amazon EC2 S3</a>
+      <a class="pagelink" href="javascript:location=location.pathname+'#page4';location.reload();void(0);">Google GCE</a>
+      <br>
     </div>
+	</br>
     <div id="result">
     </div>
   </div>
+  </br>
+<div class="footer">
+<p>🌈卑鄙是卑鄙者的通行证</p>
+<p>🌸高尚是高尚者的墓志铭</p>
+<p>💗看吧</p>
+<p>🏯在那镀金的天空中</p>
+<p>🌳飘满了死者弯曲的倒影</p>
+</div>
 </body>
 </html>
